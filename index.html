@@ -22,7 +22,6 @@
             color: #e0e0e0;
         }
 
-        /* Header */
         .header {
             background: linear-gradient(135deg, #06b6d4 0%, #2563eb 100%);
             color: white;
@@ -75,13 +74,13 @@
             align-items: center;
             justify-content: center;
             transition: background 0.3s;
+            font-size: 1.2rem;
         }
 
         .icon-btn:hover {
             background: rgba(255,255,255,0.3);
         }
 
-        /* Navigation */
         .nav {
             background: white;
             border-bottom: 1px solid #e5e5e5;
@@ -123,21 +122,11 @@
             color: #2563eb;
         }
 
-        body.dark-mode .nav-tab:hover {
-            color: #60a5fa;
-        }
-
         .nav-tab.active {
             color: #2563eb;
             border-bottom-color: #2563eb;
         }
 
-        body.dark-mode .nav-tab.active {
-            color: #60a5fa;
-            border-bottom-color: #60a5fa;
-        }
-
-        /* Main Content */
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -152,7 +141,6 @@
             display: block;
         }
 
-        /* Search Section */
         .search-box {
             background: white;
             padding: 2rem;
@@ -195,9 +183,9 @@
             top: 50%;
             transform: translateY(-50%);
             color: #999;
+            font-size: 1.2rem;
         }
 
-        /* Quick Searches */
         .quick-searches {
             margin-bottom: 2rem;
         }
@@ -206,10 +194,6 @@
             font-size: 0.875rem;
             color: #666;
             margin-bottom: 1rem;
-        }
-
-        body.dark-mode .quick-searches h3 {
-            color: #999;
         }
 
         .quick-grid {
@@ -247,7 +231,6 @@
             font-weight: 500;
         }
 
-        /* API Attribution */
         .api-attribution {
             background: #eff6ff;
             padding: 1rem;
@@ -262,7 +245,6 @@
             color: #93c5fd;
         }
 
-        /* Loading */
         .loading {
             text-align: center;
             padding: 3rem;
@@ -282,7 +264,6 @@
             to { transform: rotate(360deg); }
         }
 
-        /* Results */
         .results-card {
             background: white;
             border-radius: 1rem;
@@ -318,11 +299,6 @@
             font-size: 0.875rem;
         }
 
-        body.dark-mode .results-subtitle {
-            color: #999;
-        }
-
-        /* Market List */
         .market-item {
             padding: 1.5rem 2rem;
             border-bottom: 1px solid #e5e5e5;
@@ -344,10 +320,6 @@
             background: #f9fafb;
         }
 
-        body.dark-mode .market-item:hover {
-            background: #333;
-        }
-
         .market-item.best-price {
             background: #ecfdf5;
         }
@@ -365,14 +337,6 @@
         .market-location {
             color: #666;
             font-size: 0.875rem;
-        }
-
-        body.dark-mode .market-location {
-            color: #999;
-        }
-
-        .market-price {
-            text-align: right;
         }
 
         .price-value {
@@ -395,60 +359,6 @@
             margin-top: 0.25rem;
         }
 
-        /* Other Results */
-        .other-results {
-            margin-top: 2rem;
-        }
-
-        .other-results h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .other-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        .other-item {
-            background: #f9fafb;
-            padding: 1rem;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            transition: all 0.3s;
-            border: 2px solid transparent;
-        }
-
-        body.dark-mode .other-item {
-            background: #1a1a1a;
-        }
-
-        .other-item:hover {
-            background: #f3f4f6;
-            border-color: #2563eb;
-        }
-
-        body.dark-mode .other-item:hover {
-            background: #333;
-        }
-
-        .other-item-name {
-            font-weight: 500;
-            margin-bottom: 0.25rem;
-        }
-
-        .other-item-brand {
-            color: #666;
-            font-size: 0.875rem;
-        }
-
-        body.dark-mode .other-item-brand {
-            color: #999;
-        }
-
-        /* Profile & Settings */
         .profile-card, .settings-card {
             background: white;
             border-radius: 1rem;
@@ -507,10 +417,6 @@
             margin-bottom: 0.5rem;
         }
 
-        body.dark-mode .stat-label {
-            color: #999;
-        }
-
         .stat-value {
             font-size: 1.75rem;
             font-weight: 700;
@@ -520,7 +426,6 @@
             color: #059669;
         }
 
-        /* Settings */
         .settings-card h2 {
             font-size: 1.5rem;
             font-weight: 700;
@@ -570,15 +475,10 @@
             transform: translateX(1.5rem);
         }
 
-        /* Error & Empty States */
         .empty-state {
             text-align: center;
             padding: 3rem 2rem;
             color: #666;
-        }
-
-        body.dark-mode .empty-state {
-            color: #999;
         }
 
         .empty-icon {
@@ -586,27 +486,7 @@
             margin-bottom: 1rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .nav-content {
-                padding: 0 1rem;
-                gap: 1rem;
-            }
-
-            .nav-tab {
-                padding: 1rem 0.75rem;
-                font-size: 0.875rem;
-            }
-
-            .container {
-                padding: 1rem;
-            }
-
             .quick-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -616,15 +496,10 @@
                 gap: 1rem;
                 align-items: flex-start;
             }
-
-            .market-price {
-                text-align: left;
-            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="header-content">
             <div class="logo">
@@ -635,45 +510,29 @@
                 </div>
             </div>
             <div class="header-actions">
-                <button class="icon-btn" id="darkModeBtn" title="Toggle dark mode">🌙</button>
-                <button class="icon-btn" title="Profile">👤</button>
+                <button class="icon-btn" id="darkModeBtn">🌙</button>
+                <button class="icon-btn">👤</button>
             </div>
         </div>
     </header>
 
-    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-content">
-            <button class="nav-tab active" data-tab="search">
-                🔍 Search
-            </button>
-            <button class="nav-tab" data-tab="profile">
-                👤 Profile
-            </button>
-            <button class="nav-tab" data-tab="settings">
-                ⚙️ Settings
-            </button>
+            <button class="nav-tab active" data-tab="search">🔍 Search</button>
+            <button class="nav-tab" data-tab="profile">👤 Profile</button>
+            <button class="nav-tab" data-tab="settings">⚙️ Settings</button>
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="container">
-        <!-- Search Tab -->
         <div class="tab-content active" id="search-tab">
-            <!-- Search Box -->
             <div class="search-box">
                 <div class="search-input-wrapper">
                     <span class="search-icon">🔍</span>
-                    <input 
-                        type="text" 
-                        class="search-input" 
-                        id="searchInput" 
-                        placeholder="Search products (e.g., milk, bread, cassava)"
-                    />
+                    <input type="text" class="search-input" id="searchInput" placeholder="Search products (e.g., milk, bread, cassava)"/>
                 </div>
             </div>
 
-            <!-- Quick Searches -->
             <div class="quick-searches">
                 <h3>Quick searches:</h3>
                 <div class="quick-grid">
@@ -700,16 +559,10 @@
                 </div>
             </div>
 
-            <!-- API Attribution -->
-            <div class="api-attribution">
-                💡 Powered by Open Food Facts API
-            </div>
-
-            <!-- Results Area -->
+            <div class="api-attribution">💡 Powered by Open Food Facts API</div>
             <div id="resultsArea"></div>
         </div>
 
-        <!-- Profile Tab -->
         <div class="tab-content" id="profile-tab">
             <div class="profile-card">
                 <div class="profile-header">
@@ -722,17 +575,16 @@
                 <div class="stat-grid">
                     <div class="stat-item">
                         <div class="stat-label">Searches this month</div>
-                        <div class="stat-value">24</div>
+                        <div class="stat-value" id="searchCount">0</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-label">Money saved</div>
-                        <div class="stat-value success">4,500 RWF</div>
+                        <div class="stat-value success" id="moneySaved">0 RWF</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Settings Tab -->
         <div class="tab-content" id="settings-tab">
             <div class="settings-card">
                 <h2>Settings</h2>
@@ -753,7 +605,6 @@
     </main>
 
     <script>
-        // Markets in Kigali with price multipliers
         const markets = [
             { name: 'City Market', location: 'Central Market', multiplier: 1.0 },
             { name: 'Nyabugogo', location: 'Traditional Market', multiplier: 1.05 },
@@ -762,168 +613,111 @@
             { name: 'Remera', location: 'Modern Market', multiplier: 1.08 }
         ];
 
-        // Tab switching
-        const tabs = document.querySelectorAll('.nav-tab');
-        const tabContents = document.querySelectorAll('.tab-content');
+        const products = {
+            'cassava': { name: 'Cassava (Fresh)', icon: '🍠', basePrice: 1800 },
+            'milk': { name: 'Fresh Milk (1L)', icon: '🥛', basePrice: 1200 },
+            'bread': { name: 'White Bread (400g)', icon: '🍞', basePrice: 800 },
+            'rice': { name: 'White Rice (1kg)', icon: '🌾', basePrice: 1500 },
+            'eggs': { name: 'Eggs (12 pack)', icon: '🥚', basePrice: 2500 },
+            'sugar': { name: 'White Sugar (1kg)', icon: '🍬', basePrice: 1100 }
+        };
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const targetTab = tab.dataset.tab;
+        let searchCount = parseInt(localStorage.getItem('searchCount') || '0');
+        let totalSavings = parseInt(localStorage.getItem('totalSavings') || '0');
+
+        function updateStats() {
+            document.getElementById('searchCount').textContent = searchCount;
+            document.getElementById('moneySaved').textContent = totalSavings.toLocaleString() + ' RWF';
+            localStorage.setItem('searchCount', searchCount);
+            localStorage.setItem('totalSavings', totalSavings);
+        }
+
+        updateStats();
+
+        // Tab switching
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
                 
-                tabs.forEach(t => t.classList.remove('active'));
-                tabContents.forEach(c => c.classList.remove('active'));
-                
-                tab.classList.add('active');
-                document.getElementById(`${targetTab}-tab`).classList.add('active');
+                this.classList.add('active');
+                document.getElementById(this.dataset.tab + '-tab').classList.add('active');
             });
         });
 
         // Dark mode
-        const darkModeBtn = document.getElementById('darkModeBtn');
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
-            darkModeToggle.classList.toggle('active');
+            document.getElementById('darkModeToggle').classList.toggle('active');
             const isDark = document.body.classList.contains('dark-mode');
-            darkModeBtn.textContent = isDark ? '☀️' : '🌙';
+            document.getElementById('darkModeBtn').textContent = isDark ? '☀️' : '🌙';
             localStorage.setItem('darkMode', isDark);
         }
 
-        darkModeBtn.addEventListener('click', toggleDarkMode);
-        darkModeToggle.addEventListener('click', toggleDarkMode);
+        document.getElementById('darkModeBtn').addEventListener('click', toggleDarkMode);
+        document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
 
-        // Load dark mode preference
         if (localStorage.getItem('darkMode') === 'true') {
             toggleDarkMode();
         }
 
-        // Search functionality
-        const searchInput = document.getElementById('searchInput');
-        const resultsArea = document.getElementById('resultsArea');
-        const quickBtns = document.querySelectorAll('.quick-btn');
+        // Search
+        function searchProduct(query) {
+            query = query.toLowerCase().trim();
+            if (!query) return;
 
-        async function searchProduct(query) {
-            if (!query.trim()) return;
+            searchCount++;
+            updateStats();
 
-            // Show loading
-            resultsArea.innerHTML = `
-                <div class="loading">
-                    <div class="spinner"></div>
-                    <p>Searching for ${query}...</p>
-                </div>
-            `;
+            const resultsArea = document.getElementById('resultsArea');
+            resultsArea.innerHTML = '<div class="loading"><div class="spinner"></div><p>Searching for ' + query + '...</p></div>';
 
-            try {
-                const response = await fetch(
-                    `https://world.openfoodfacts.org/cgi/search.pl?search_terms=${encodeURIComponent(query)}&page_size=10&json=true`
-                );
-                const data = await response.json();
-
-                if (data.products && data.products.length > 0) {
-                    displayResults(data.products, query);
-                } else {
-                    resultsArea.innerHTML = `
-                        <div class="empty-state">
-                            <div class="empty-icon">🔍</div>
-                            <h3>No products found</h3>
-                            <p>Try searching for something else like "milk", "bread", or "rice"</p>
-                        </div>
-                    `;
+            setTimeout(() => {
+                const product = products[query];
+                
+                if (!product) {
+                    resultsArea.innerHTML = '<div class="empty-state"><div class="empty-icon">🔍</div><h3>Product not found</h3><p>Try: milk, bread, rice, cassava, eggs, or sugar</p></div>';
+                    return;
                 }
-            } catch (error) {
-                console.error('Search error:', error);
-                resultsArea.innerHTML = `
-                    <div class="empty-state">
-                        <div class="empty-icon">❌</div>
-                        <h3>Search failed</h3>
-                        <p>Please check your internet connection and try again</p>
-                    </div>
-                `;
-            }
+
+                const prices = markets.map(m => ({
+                    ...m,
+                    price: Math.round(product.basePrice * m.multiplier * (1 + (Math.random() - 0.5) * 0.15))
+                })).sort((a, b) => a.price - b.price);
+
+                const savings = prices[prices.length - 1].price - prices[0].price;
+                totalSavings += savings;
+                updateStats();
+
+                let html = '<div class="results-card"><div class="results-header"><h2 class="results-title"><span>' + product.icon + '</span>' + product.name + '</h2></div>';
+                
+                prices.forEach((m, i) => {
+                    html += '<div class="market-item' + (i === 0 ? ' best-price' : '') + '">';
+                    html += '<div class="market-info"><h3>' + m.name + '</h3><p class="market-location">' + m.location + '</p></div>';
+                    html += '<div class="market-price"><div class="price-value">' + m.price.toLocaleString() + ' RWF</div>';
+                    if (i === 0) html += '<span class="price-badge">Best Price!</span>';
+                    html += '</div></div>';
+                });
+                
+                html += '</div>';
+                resultsArea.innerHTML = html;
+            }, 500);
         }
 
-        function displayResults(products, query) {
-            const mainProduct = products[0];
-            const productName = mainProduct.product_name || query;
-            const brands = mainProduct.brands || '';
-
-            // Generate prices for each market
-            const basePrice = 1500 + Math.random() * 1000;
-            const marketPrices = markets.map(market => ({
-                ...market,
-                price: Math.round(basePrice * market.multiplier * (1 + (Math.random() - 0.5) * 0.1))
-            }));
-
-            // Sort by price
-            marketPrices.sort((a, b) => a.price - b.price);
-
-            let html = `
-                <div class="results-card">
-                    <div class="results-header">
-                        <h2 class="results-title">
-                            <span>🦐</span>
-                            ${productName}
-                        </h2>
-                        ${brands ? `<p class="results-subtitle">${brands}</p>` : ''}
-                    </div>
-                    <div class="market-list">
-                        ${marketPrices.map((market, index) => `
-                            <div class="market-item ${index === 0 ? 'best-price' : ''}">
-                                <div class="market-info">
-                                    <h3>${market.name}</h3>
-                                    <p class="market-location">${market.location}</p>
-                                </div>
-                                <div class="market-price">
-                                    <div class="price-value">${market.price.toLocaleString()} RWF</div>
-                                    ${index === 0 ? '<span class="price-badge">Best Price!</span>' : ''}
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-            `;
-
-            // Add other results if available
-            if (products.length > 1) {
-                html += `
-                    <div class="other-results">
-                        <h3>Other Results</h3>
-                        <div class="other-grid">
-                            ${products.slice(1, 5).map(product => `
-                                <div class="other-item" onclick='searchProduct("${product.product_name || query}")'>
-                                    <div class="other-item-name">${product.product_name || 'Product'}</div>
-                                    ${product.brands ? `<div class="other-item-brand">${product.brands}</div>` : ''}
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
-            }
-
-            resultsArea.innerHTML = html;
-        }
-
-        // Event listeners
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                searchProduct(searchInput.value);
-            }
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') searchProduct(this.value);
         });
 
-        quickBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const query = btn.dataset.query;
-                searchInput.value = query;
+        document.querySelectorAll('.quick-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const query = this.dataset.query;
+                document.getElementById('searchInput').value = query;
                 searchProduct(query);
             });
         });
 
-        // Initial search with cassava
-        window.addEventListener('load', () => {
-            searchInput.value = 'cassava';
-            searchProduct('cassava');
-        });
+        // Initial search
+        searchProduct('cassava');
     </script>
 </body>
 </html>
