@@ -3,15 +3,15 @@
 
 **Domain**: http://mukabucyanaservice.tech 
 	##  About This Project
-Market Compare is a simple web application that allows users to search for food products and compare prices across 5 major markets in Kigali; the app helps shoppers save money by showing which market has the lowest prices.
+-Market Compare is a simple web application that allows users to search for food products and compare prices across 5 major markets in Kigali; the app helps shoppers save money by showing which market has the lowest prices.
 	##  Feature
- **Search Products**: Type any food item (milk, bread, rice, etc.) and get results
- **Price Comparison**: Compare prices across 5 Kigali markets like City market, Nyabugogo, Kimironko, Nyamirambo, Remera markets
- **Best Price Highlight**:The cheapest option is highlighted in green
- **Quick Search Buttons**:click search for common items
- **Search Statistics**: Track how many searches you've done and money saved
- **Dark Mode**: Switch between light and dark themes
- **Mobile Friendly**: Works on phones, tablets, and computers
+-**Search Products**: Type any food item (milk, bread, rice, etc.) and get results
+-**Price Comparison**: Compare prices across 5 Kigali markets like City market, Nyabugogo, Kimironko, Nyamirambo, Remera markets
+-**Best Price Highlight**:The cheapest option is highlighted in green
+-**Quick Search Buttons**:click search for common items
+-**Search Statistics**: Track how many searches you've done and money saved
+-**Dark Mode**: Switch between light and dark themes
+-**Mobile Friendly**: Works on phones, tablets, and computers
 	##  How to Use Locally
 ### Requirements
 - A web browser (Chrome, Firefox, Safari, or Edge)
@@ -32,10 +32,10 @@ bash
 	##  Live Deployment
 The app is deployed and accessible at:
 
- **Load Balancer**: http://54.197.14.236
- **Domain Name**: http://mukabucyanaservice.tech
- **Web Server 1**: http://52.91.188.182
- **Web Server 2**: http://3.86.25.85
+-**Load Balancer**: http://54.197.14.236
+-**Domain Name**: http://mukabucyanaservice.tech
+-**Web Server 1**: http://52.91.188.182
+-**Web Server 2**: http://3.86.25.85
 ### Why This API?
 - Completely free to use
 - No authentication needed
@@ -75,25 +75,22 @@ Refresh http://54.197.14.236 multiple times. The load balancer distributes reque
 - Check load balancer configuration: `sudo nginx -t`
 - Restart services: `sudo systemctl restart nginx`
 	##  Challenges Faced
-### 2. Real Market Prices
+### 1. Real Market Prices
 **Problem**: No API available for actual Kigali market prices  
 **Solution**: Created realistic price simulation based on market research and price variations
-### 3. Load Balancer Configuration
+### 2. Load Balancer Configuration
 **Problem**: Load balancer initially served wrong page  
 **Solution**: Removed all default Nginx configs, created clean configuration with proper  settings
-	##  Security & Privacy
+       ###  Security & Privacy
 - **No user data collected** - Everything runs in your browser
 - **No passwords needed** - No login system
 - **Safe to use** - No personal information stored
 	##  Future Improvements
 
 - Add more products to the database
-- Connect to real market price APIs when available
-- Add user accounts to save favorite products
-- Price alerts when items go on sale
+- Connect to real market price APIs when availabble
 - Shopping list feature
 - Support for French and Kinyarwanda languages
-- Mobile app version
 	## 👤 Author
 
 **Dedine Mukabucyana**
