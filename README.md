@@ -1,17 +1,30 @@
-###** Kigali Price Comparison App**###
+# Market Compare - Kigali Price Comparison App
+
+ A web application that helps people in Kigali, Rwanda find the best grocery prices across different markets.
+
 **Live Demo**: http://54.197.14.236
 
-**Domain**: http://mukabucyanaservice.tech 
-	##  About This Project
--Market Compare is a simple web application that allows users to search for food products and compare prices across 5 major markets in Kigali; the app helps shoppers save money by showing which market has the lowest prices.
-	##  Feature
--**Search Products**: Type any food item (milk, bread, rice, etc.) and get results
--**Price Comparison**: Compare prices across 5 Kigali markets like City market, Nyabugogo, Kimironko, Nyamirambo, Remera markets
--**Best Price Highlight**:The cheapest option is highlighted in green
--**Quick Search Buttons**:click search for common items
--**Search Statistics**: Track how many searches you've done and money saved
--**Dark Mode**: Switch between light and dark themes
--**Mobile Friendly**: Works on phones, tablets, and computers
+**Domain**: http://mukabucyanaservice.tech
+
+---
+
+##  About This Project
+
+Market Compare is a simple web application that allows users to search for food products and compare prices across 5 major markets in Kigali. The app helps shoppers save money by showing which market has the lowest prices.
+
+---
+
+##  Features
+
+- **Search Products**: Type any food item (milk, bread, rice, etc.) and get instant results
+
+- **Price Comparison**: Compare prices across 5 Kigali markets:
+  - City Market (Central Market)
+  - Nyabugogo (Traditional Market)
+  - Kimironko (Traditional Market)
+  - Nyamirambo (Local Market)
+  - Remera (Modern Market)
+
 	##  How to Use Locally
 ### Requirements
 - A web browser (Chrome, Firefox, Safari, or Edge)
