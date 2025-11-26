@@ -2,9 +2,9 @@
 
  A web application that helps people in Kigali, Rwanda find the best grocery prices across different markets.
 
-**Live Demo**: http://54.197.14.236
+**Live Demo**: http://54.197.14.236 
 
-**Domain**: http://mukabucyanaservice.tech
+**Domain**: http://mukabucyanaservice.tech and https://mukabucyanaservice.tech
 
 Demo-Video(youtube-video): https://youtu.be/XTtg_-ktGNo
 
